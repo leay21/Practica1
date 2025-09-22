@@ -87,7 +87,7 @@
 <ol>
   <li>Clona el repositorio</li>
   <li>Abre Android Studio.</li>
-  <li>Selecciona <strong>"Open an existing Project"</strong> y navega a la carpeta del proyecto de Android.</li>
+  <li>Selecciona <strong>"Open an existing Project"</strong> y navega a la carpeta del proyecto de Android. (La carpeta de la versión de Kotlin es <strong>"Practica1K"</strong>)</li>
   <li>Espera a que Gradle sincronice todas las dependencias.</li>
   <li>Selecciona un emulador o un dispositivo físico y presiona el botón "Run".</li>
 </ol>
@@ -158,7 +158,7 @@
 <ol>
   <li>Asegúrate de tener el <a href="https://flutter.dev/docs/get-started/install">SDK de Flutter</a> instalado.</li>
   <li>Clona el repositorio.</li>
-  <li>Abre la carpeta del proyecto de Flutter en Visual Studio Code.</li>
+  <li>Abre la carpeta del proyecto de Flutter en Visual Studio Code. (La carpeta de la versión de Flutter es <strong>"Practica1F"</strong>)</li>
   <li>Abre una terminal en VS Code y ejecuta <code>flutter pub get</code> para descargar las dependencias.</li>
   <li>Selecciona un emulador o un dispositivo físico y presiona F5 o ejecuta <code>flutter run</code> en la terminal.</li>
 </ol>
