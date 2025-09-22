@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/textFieldsFragment">
+
+    <fragment
+        android:id="@+id/textFieldsFragment"
+        android:name="com.example.practica1.TextFieldsFragment"
+        android:label="fragment_text_fields"
+        tools:layout="@layout/fragment_text_fields" />
+    <fragment
+        android:id="@+id/buttonsFragment"
+        android:name="com.example.practica1.ButtonsFragment"
+        android:label="fragment_buttons"
+        tools:layout="@layout/fragment_buttons" />
+    <fragment
+        android:id="@+id/selectionFragment"
+        android:name="com.example.practica1.SelectionFragment"
+        android:label="fragment_selection"
+        tools:layout="@layout/fragment_selection" />
+    <fragment
+        android:id="@+id/listsFragment"
+        android:name="com.example.practica1.ListsFragment"
+        android:label="fragment_lists"
+        tools:layout="@layout/fragment_lists" />
+    <fragment
+        android:id="@+id/infoElementsFragment"
+        android:name="com.example.practica1.InfoElementsFragment"
+        android:label="fragment_info_elements"
+        tools:layout="@layout/fragment_info_elements" />
+</navigation>

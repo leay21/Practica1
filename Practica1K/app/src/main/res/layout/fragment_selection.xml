@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".SelectionFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💡 Elementos de Selección"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Permiten al usuario elegir una o varias opciones."
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="8dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginBottom="8dp"
+            android:text="Aquí iría un texto largo simulando los términos y condiciones de servicio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+        <CheckBox
+            android:id="@+id/checkboxSample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="He leído y acepto los términos y condiciones"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elija alguna de las opciones:"
+            android:layout_marginBottom="8dp"/>
+        <RadioGroup
+            android:id="@+id/radioGroupSample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+            <RadioButton
+                android:id="@+id/rbOption1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opción A"/>
+            <RadioButton
+                android:id="@+id/rbOption2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opción B"/>
+        </RadioGroup>
+
+        <Switch
+            android:id="@+id/switchSample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activar notificaciones"
+            android:layout_marginBottom="24dp"
+            tools:ignore="UseSwitchCompatOrMaterial3"/>
+
+        <TextView
+            android:id="@+id/tvSelectionResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:text="Aquí aparecerá el resultado"/>
+
+    </LinearLayout>
+</ScrollView>

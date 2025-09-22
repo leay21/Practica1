@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".ButtonsFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎨 Botones"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginBottom="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inician acciones cuando el usuario los presiona."
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/buttonSample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Botón Estándar"
+        android:layout_marginBottom="16dp"/>
+    <TextView
+        android:id="@+id/tvButtonResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        tools:text="Aquí aparecerá el resultado"/>
+
+    <Button
+        android:id="@+id/btnCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Púlsame (0)"
+        android:layout_marginBottom="16dp"/>
+    <Button
+        android:id="@+id/btnDisable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Púlsame para desactivar"
+        android:layout_marginBottom="16dp"/>
+    <ImageButton
+        android:id="@+id/imageButtonSample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Botón con imagen de corazón"
+        android:src="@android:drawable/star_on" /> </LinearLayout>
