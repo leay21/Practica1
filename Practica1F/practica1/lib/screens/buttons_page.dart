@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+// 1. IMPORTA la nueva pantalla que acabas de crear
+import 'package:practica1/screens/second_page.dart';
 
 class ButtonsPage extends StatefulWidget {
   const ButtonsPage({super.key});
@@ -35,21 +37,21 @@ class _ButtonsPageState extends State<ButtonsPage> {
             const Text('Inician acciones cuando el usuario los presiona.'),
             const SizedBox(height: 24),
             
-            // Botón con contador
+            // Botón con contador (tu código original)
             ElevatedButton(
               onPressed: _incrementCounter,
               child: Text('Púlsame ($_clickCount)'),
             ),
             const SizedBox(height: 16),
             
-            // Botón que se desactiva
+            // Botón que se desactiva (tu código original)
             ElevatedButton(
               onPressed: _isButtonDisabled ? null : _disableButton,
               child: Text(_isButtonDisabled ? 'Desactivado' : 'Púlsame para desactivar'),
             ),
             const SizedBox(height: 16),
 
-            // ImageButton (en Flutter es un IconButton)
+            // ImageButton (tu código original)
             IconButton(
               icon: const Icon(Icons.star),
               iconSize: 48,
@@ -57,6 +59,23 @@ class _ButtonsPageState extends State<ButtonsPage> {
               onPressed: () {
                 ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(content: Text('¡Te gusta esta estrella!')),
+                );
+              },
+            ),
+            
+            // === NUEVO BOTÓN PARA NAVEGAR AÑADIDO AQUÍ ===
+            const SizedBox(height: 32), // Un separador visual
+            FilledButton(
+              style: FilledButton.styleFrom(
+                backgroundColor: Theme.of(context).colorScheme.primary,
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+              ),
+              child: const Text('Ir a la Segunda Pantalla'),
+              onPressed: () {
+                // 2. Esta es la lógica que realiza la navegación
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SecondPage()),
                 );
               },
             ),

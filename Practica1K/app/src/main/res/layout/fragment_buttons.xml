@@ -49,5 +49,16 @@
         android:id="@+id/imageButtonSample"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="Botón con imagen de corazón"
-        android:src="@android:drawable/star_on" /> </LinearLayout>
+        android:contentDescription="Botón con imagen de estrella"
+        android:src="@android:drawable/star_on" />
+
+    <Button
+        android:id="@+id/btnNavigateToSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Ir a la Segunda Activity"
+        android:backgroundTint="@color/md_theme_primary"
+        android:textColor="@color/md_theme_onPrimary" />
+
+</LinearLayout>
