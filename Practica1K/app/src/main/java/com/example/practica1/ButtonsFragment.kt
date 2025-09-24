@@ -1,6 +1,6 @@
 package com.example.practica1
 
-import android.content.Intent // <-- 1. AÑADE ESTA IMPORTACIÓN
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -48,8 +48,6 @@ class ButtonsFragment : Fragment() {
             it.isEnabled = false // 'it' se refiere al botón que fue presionado
             (it as Button).text = "Desactivado"
         }
-
-        // === 2. AÑADE LA LÓGICA DEL NUEVO BOTÓN ===
         binding.btnNavigateToSecond.setOnClickListener {
             // Un Intent es el "intento" o la petición de navegar a otra pantalla
             val intent = Intent(requireActivity(), SecondActivity::class.java)
