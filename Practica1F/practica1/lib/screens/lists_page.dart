@@ -5,7 +5,6 @@ class ListsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Lista con 30 elementos para asegurar el scroll
     final items = List<String>.generate(30, (i) => 'Elemento número ${i + 1}');
 
     return Column(
