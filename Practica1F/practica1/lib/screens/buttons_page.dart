@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// 1. IMPORTA la nueva pantalla que acabas de crear
 import 'package:practica1/screens/second_page.dart';
 
 class ButtonsPage extends StatefulWidget {
@@ -37,21 +36,21 @@ class _ButtonsPageState extends State<ButtonsPage> {
             const Text('Inician acciones cuando el usuario los presiona.'),
             const SizedBox(height: 24),
             
-            // Botón con contador (tu código original)
+            // Botón con contador
             ElevatedButton(
               onPressed: _incrementCounter,
               child: Text('Púlsame ($_clickCount)'),
             ),
             const SizedBox(height: 16),
             
-            // Botón que se desactiva (tu código original)
+            // Botón que se desactiva
             ElevatedButton(
               onPressed: _isButtonDisabled ? null : _disableButton,
               child: Text(_isButtonDisabled ? 'Desactivado' : 'Púlsame para desactivar'),
             ),
             const SizedBox(height: 16),
 
-            // ImageButton (tu código original)
+            // ImageButton
             IconButton(
               icon: const Icon(Icons.star),
               iconSize: 48,
@@ -62,8 +61,6 @@ class _ButtonsPageState extends State<ButtonsPage> {
                 );
               },
             ),
-            
-            // === NUEVO BOTÓN PARA NAVEGAR AÑADIDO AQUÍ ===
             const SizedBox(height: 32), // Un separador visual
             FilledButton(
               style: FilledButton.styleFrom(
@@ -72,7 +69,6 @@ class _ButtonsPageState extends State<ButtonsPage> {
               ),
               child: const Text('Ir a la Segunda Pantalla'),
               onPressed: () {
-                // 2. Esta es la lógica que realiza la navegación
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const SecondPage()),
