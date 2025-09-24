@@ -71,7 +71,7 @@ class InfoElementsFragment : Fragment() {
     }
 
     private fun resetProgressBar() {
-        // Detiene la animación si está en curso (comprobando si fue inicializada)
+        // Detiene la animación si está en curso
         if (::progressRunnable.isInitialized) {
             handler.removeCallbacks(progressRunnable)
         }
