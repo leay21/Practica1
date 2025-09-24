@@ -5,15 +5,12 @@ class SecondPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Usamos un Scaffold para darle la estructura básica a la pantalla
     return Scaffold(
-      // La AppBar es la barra superior de la aplicación
       appBar: AppBar(
         title: const Text('Segunda Pantalla 🚀'),
         backgroundColor: Theme.of(context).colorScheme.primary,
         foregroundColor: Theme.of(context).colorScheme.onPrimary,
       ),
-      // El cuerpo de la pantalla
       body: const Center(
         child: Text(
           'Bienvenido a la segunda pantalla 👋',
