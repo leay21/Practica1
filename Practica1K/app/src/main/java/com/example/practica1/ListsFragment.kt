@@ -27,7 +27,6 @@ class ListsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Lista más grande para forzar el scroll
         val items = List(30) { "Elemento número ${it + 1}" }
 
         binding.recyclerViewSample.layoutManager = LinearLayoutManager(context)
@@ -43,7 +42,7 @@ class ListsFragment : Fragment() {
     }
 }
 
-// Adapter para el RecyclerView (Modificado para aceptar un listener)
+// Adapter para el RecyclerView
 class SimpleAdapter(
     private val items: List<String>,
     private val onItemClick: (String) -> Unit // Función lambda para el clic
