@@ -85,7 +85,6 @@ class _InfoElementsPageState extends State<InfoElementsPage> with SingleTickerPr
             const Text('Califica esta app (RatingBar)', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
             const SizedBox(height: 16),
             
-            // --- INICIO DE LA VERSIÓN INTERACTIVA DEL RATINGBAR ---
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: List.generate(5, (index) {
@@ -109,7 +108,6 @@ class _InfoElementsPageState extends State<InfoElementsPage> with SingleTickerPr
                 );
               }),
             )
-            // --- FIN DE LA VERSIÓN INTERACTIVA DEL RATINGBAR ---
           ],
         ),
       ),
